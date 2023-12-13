@@ -136,7 +136,7 @@ if ((averageDolphins > averageKoalas) && minDolphins >= minScore) {
 
 
 
-
+/*
 //Challenge 3 Bonus2
 const averageDolphins = (97 + 112 + 101)/3;
 //const averageKoalas = (97 + 112 + 101)/3;
@@ -156,3 +156,28 @@ if ((averageDolphins > averageKoalas) && minDolphins >= minScore) {
 } else {
     console.log ("There's no winner")
 };
+*/
+
+/*
+const day = "Sunday";
+
+if (day === "Monday") {
+    console.log ("Monday");
+} else if (day === "Tuesday") {
+    console.log ("Tuesday");
+} else if (day === "Wednesday" || day === "Thursday") {
+    console.log ("Wednesday & Thursday");
+} else if (day === "Friday") {
+    console.log ("Friday");
+} else if (day === "Saturday" || day === "Sunday") {
+    console.log ("Saturday & Sunday");
+} else {
+    console.log ("Invalid day");
+};
+*/
+
+//Challenge 4
+const bill = 400;
+//const tip = 50 <= bill <= 300 ? 0.15 : 0.2;
+const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+console.log (`The bill was ${bill}, the tip was ${tip}, the final bill is ${bill + tip}`);
