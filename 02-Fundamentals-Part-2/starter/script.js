@@ -34,7 +34,7 @@
 
 // console.log ( yearsTillRetirement (1987));
 
-
+/*
 //Challenge 5
 
 const calcAverage = (Score1, Score2, Score3) => (Score1 + Score2 + Score3) / 3;
@@ -51,4 +51,28 @@ function checkWinner (avgDolhins, avgKoalas) {
     return `Koalas win (${avgKoalas} vs. ${avgDolhins})`;
 } else {return console.log("No Winner")};
 }
-console.log(checkWinner (avgDolphinsMain,avgKoalasMain));
+console.log(checkWinner (avgDolphinsMain,avgKoalasMain)); 
+*/
+
+//Challenge 6
+
+const calcTip = function (bill) {
+return bill >= 50 && bill <=300 ? bill * 0.15 : bill * 0.2;
+};
+console.log (calcTip(100));
+
+const bills = [125,555,44];
+console.log (bills);
+const tips = [calcTip(bills[0]),calcTip(bills[1]),calcTip(bills[2])];
+console.log(tips);
+const total = [(bills[0] + tips[0]), (bills[1] + tips[1]), (bills[2] + tips[2])];
+console.log(total);
+
+// bill.push(11);
+// console.log (bill);
+// console.log (bill.length-1);
+// bill[1] = 100;
+// console.log (bill);
+
+
+
