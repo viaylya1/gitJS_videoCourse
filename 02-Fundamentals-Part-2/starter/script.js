@@ -54,6 +54,7 @@ function checkWinner (avgDolhins, avgKoalas) {
 console.log(checkWinner (avgDolphinsMain,avgKoalasMain)); 
 */
 
+/*
 //Challenge 6
 
 const calcTip = function (bill) {
@@ -73,6 +74,57 @@ console.log(total);
 // console.log (bill.length-1);
 // bill[1] = 100;
 // console.log (bill);
+*/
 
+/*
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Schmedtmann',
+    birthYear: 1991,
+    job: 'teacher',
+    friends: ['Michael', 'Peter', 'Steven'],
+    hasDriverLisense: false,
+    calcAge: function () {
+        this.age = 2023 - this.birthYear;
+        return this.age;
+    },
+    getSummary: function () {
+        return `${this.firstName} is a ${this.calcAge()}-year old ${this.job}, and he has ${this.hasDriverLisense ? "a" : "no"} driver's lisense`
+    }
+  };
+  console.log(jonas.getSummary());
+  */
 
+  // Challenge 7
 
+  const mark = {
+    firstName: "Mark",
+    lastName: "Miller",
+    mass: 78,
+    height: 1.69,
+    calcBMI: function () {
+        this.BMI = this.mass / this.height **2;
+        return this.BMI;
+    }
+  };
+  console.log(mark.calcBMI());
+
+  const john = {
+    firstName: "Jojn",
+    lastName: "Smith",
+    mass: 92,
+    height: 1.95,
+    calcBMI: function () {
+        this.BMI = this.mass / this.height **2;
+        return this.BMI;
+    }
+  };
+  console.log(john.calcBMI());
+  
+  if (mark.BMI > john.BMI) {
+    console.log(`${mark.firstName} ${mark.lastName}'s BMI (${mark.BMI}) is higher than ${john.firstName} ${john.lastName}'s BMI (${john.BMI})!`)
+  } else if (john.BMI > mark.BMI) {
+    console.log(`${john.firstName} ${john.lastName}'s BMI (${john.BMI}) is higher than ${mark.firstName} ${mark.lastName}'s BMI (${mark.BMI})!`)
+  } else {
+    console.log(`${john.firstName} ${john.lastName}'s and ${mark.firstName} ${mark.lastName}'s BMI are equal (${mark.BMI})!`)
+  }
