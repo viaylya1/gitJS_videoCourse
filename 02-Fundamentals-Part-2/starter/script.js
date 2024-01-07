@@ -153,8 +153,6 @@ const jonas = {
     console.log(`bills are ${bills}`);
     console.log(`tips are ${tips}`);
     console.log(`totals are ${totals}`);
-
-
     
     const calcAverage = function (arr) {
         let sum = 0;
