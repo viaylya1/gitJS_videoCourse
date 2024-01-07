@@ -95,6 +95,7 @@ const jonas = {
   console.log(jonas.getSummary());
   */
 
+  /*
   // Challenge 7
 
   const mark = {
@@ -128,3 +129,39 @@ const jonas = {
   } else {
     console.log(`${john.firstName} ${john.lastName}'s and ${mark.firstName} ${mark.lastName}'s BMI are equal (${mark.BMI})!`)
   }
+  */
+
+  //Challenge 8
+
+  const calcTip = function (bills) {
+    return bills >= 50 && bills <=300 ? bills * 0.15 : bills * 0.2;
+    };
+
+    const bills = [22,295,176,440,37,105,10,1100,86,52];
+
+    const tips = [];
+    const totals = [];
+
+    for (let i = 0; i < bills.length; i++) {
+    const tip = calcTip(bills[i]);    
+    tips.push(tip);
+    totals.push(tip + bills[i]);    
+    // the below code would also work, but in that case we needed to repeat calcTip(bills[i]) which is not DRY
+    // tips.push(calcTip(bills[i]));
+    // totals.push(calcTip(bills[i]) + bills[i]);
+    };
+    console.log(`bills are ${bills}`);
+    console.log(`tips are ${tips}`);
+    console.log(`totals are ${totals}`);
+
+
+    
+    const calcAverage = function (arr) {
+        let sum = 0;
+        for (let i = 0; i < arr.length; i++) {
+            sum += arr[i];
+        };
+        return sum/arr.length;
+    };
+    console.log(calcAverage(totals));
+    console.log(calcAverage(tips));
